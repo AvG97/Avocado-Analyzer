@@ -196,7 +196,7 @@ def update_charts(region, avocado_type, start_date, end_date):
 
 # In[39]:
 
-port = int(os.environ.get('PORT', 5000))
+port = int(os.environ['PORT'])
 
 if __name__ == "__main__":
     app.run_server(host='0.0.0.0', port=port, debug=True, use_reloader=False)
