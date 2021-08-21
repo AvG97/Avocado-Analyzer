@@ -39,6 +39,7 @@ external_stylesheets = [
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
+
 app.title = "Avocado Analytics: Understand Your Avocados!"
 
 
@@ -198,7 +199,7 @@ def update_charts(region, avocado_type, start_date, end_date):
 port = int(os.environ.get('PORT', 5000))
 
 if __name__ == "__main__":
-    app.run_server(port=port, debug=False)
+    app.run_server(debug=False)
 
 
 # In[ ]:
