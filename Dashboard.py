@@ -199,7 +199,7 @@ def update_charts(region, avocado_type, start_date, end_date):
 #port = int(os.environ.get("PORT", 5000))
 
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run_server(debug=True, use_reloader=False)
 
 
 # In[ ]:
