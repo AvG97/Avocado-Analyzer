@@ -10,7 +10,7 @@ import dash_html_components as html
 from dash.dependencies import Output, Input
 import pandas as pd
 import numpy as np
-#import os
+import os
 
 
 # In[3]:
@@ -198,7 +198,7 @@ def update_charts(region, avocado_type, start_date, end_date):
 port = int(os.environ.get('PORT', 5000))
 
 if __name__ == "__main__":
-    app.run_server(debug=False)
+    app.run_server(port=port, debug=False)
 
 
 # In[ ]:
